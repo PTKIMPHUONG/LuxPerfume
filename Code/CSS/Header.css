@@ -1,0 +1,84 @@
+.header-top {
+    background-color: #c3c8ff; /* Màu nền cho phần header-top */
+}
+/*THANH TÌM KIẾM*/
+.search-bar {
+    padding: 10px;
+    text-align: right; /* Căn chỉnh văn bản bên phải */
+}
+
+.search-input {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none; /* Loại bỏ đường viền */
+    height: 20px;
+}
+
+.search-button {
+    background-color: #A877B2;
+    color: #fff;
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 5px; /* Bo góc cho nút */
+    border: none; 
+    cursor: pointer; /* Biểu tượng con trỏ khi di chuyển chuột qua mục menu */
+}
+
+.search-button:hover{
+    background-color: #944076;
+}
+
+/*CÁC ICON Ở HEADER*/
+.icons {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #A877B2;
+}
+
+.icons:hover {
+    color: #944076;
+}
+
+/*TÊN THƯƠNG HIỆU Ở GIỮA HEADER*/
+.brand {
+    text-align: center; /* Căn chỉnh nội dung theo giữa */
+    font-family: "Arial", sans-serif;
+    font-size: 36px;
+    color: #333; 
+    text-transform: uppercase; /* Chuyển đổi văn bản thành chữ in hoa */
+    letter-spacing: 2px; /* Khoảng cách giữa các ký tự */
+    margin: 50px; 
+}
+
+/*THANH MENU*/
+.menu {
+    list-style: none; /* Loại bỏ dấu chấm của danh sách */
+    padding: 0; /* Loại bỏ đệm của danh sách */
+    text-align: center;
+}
+
+.menu li {
+    display: inline; /* Hiển thị các mục menu cạnh nhau */
+    margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #5c5c5c;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*THAY ĐỔI KHI DI CHUYỂN CHUỘT QUA LIÊN KẾT TẠI MENU*/
+.menu a:hover {
+    color: #944076; /* Màu chữ khi di chuột qua liên kết menu */
+}
+/*ĐƯỜNG KẺ NGANG*/
+.custom-hr {
+    border: none; 
+    border-top: 1px solid #333; /* Màu và độ dày của đường kẻ */
+    margin: 20px auto; /* Khoảng cách từ phía trên và phía dưới đường kẻ */
+    width: 75%; /* Độ rộng của đường kẻ ngang */
+}

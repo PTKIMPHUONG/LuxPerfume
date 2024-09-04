@@ -1,0 +1,145 @@
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Đặt để bắt đầu từ trên cùng */
+    padding: 20px;
+}
+.product-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Đặt cột để có khoảng cách giữa các phần tử */
+    width: 100%; /* Kích thước 100% so với phần bên trái */
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0; /* Khoảng cách giữa tiêu đề và mô tả */
+    font-family:'Courier New', Courier, monospace;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #5c5c5c;
+    margin: 10px 0; /* Khoảng cách giữa các phần mô tả */
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #B9ADE8;
+    margin: 10px 0; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.product-addToCart {
+    background-color: #A877B2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0; /* Khoảng cách giữa nút và phần khác */
+}
+.product-addToCart:hover {
+    background-color: #944076;
+}
+/*NÚT TĂNG GIẢM SỐ LƯỢNG*/
+.quantity-input {
+    display: flex;
+    align-items: center;
+    width: 150px;
+
+}
+
+.quantity-button {
+    width: 50px;
+    height: 34px;
+    background-color: #B092CE;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.quantity-button:hover {
+    background-color: #A877B2;
+}
+
+.quantity {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #B092CE;
+    font-size: 18px;
+    color: #B092CE;
+}
+
+/*thông tin về sản phẩm */
+.Info
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30%;
+    border-bottom: 1px dashed gray;
+    border-top: none;
+    padding-bottom: 2%;
+    padding-top: 10px;
+}
+
+.Info > h2{
+    letter-spacing: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Info > p {
+    font-family: 'Montserrat', sans-serif;
+}
+.Info > div
+{
+    display: none;
+    padding-top: 3%;
+}
+
+.Info:hover > div
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    display: block;
+    border-top: 1px dashed grey;
+}
+
+.Info:hover
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+.Info:hover>h2
+{
+   color: #944076;
+}
+
+
+

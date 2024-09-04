@@ -1,0 +1,110 @@
+.footer {
+    background-color: #c3c8ff; /* Màu nền cho phần footer */
+    padding: 20px; 
+}
+
+.footer-container {
+    display: flex; /* Sử dụng mô hình flexbox cho phần footer-container */
+    justify-content: space-between; /* Căn chỉnh nội dung theo chiều ngang */
+    max-width: 1200px; /* Độ rộng tối đa cho phần footer-container */
+    margin: 0 auto; /* Canh giữa theo chiều ngang */
+    padding: 0 20px; /* Khoảng cách giữa nội dung và biên*/
+}
+
+/*CHIA BỐ CỤC LÀM 3 PHẦN*/
+.footer-section {
+    flex: 1; /* Phần tỷ lệ dựa trên flexbox, chia bố cục làm 3 phần */
+    padding: 0 20px; 
+}
+
+.footer-section > h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.footer p {
+    color: #000000; 
+}
+/*TÙY CHỈNH CHO MENU Ở GIỮA*/
+.footer ul {
+    list-style: none; /* Loại bỏ dấu chấm trước danh sách */
+    padding-left: 0; /* Loại bỏ đệm bên trái của danh sách */
+}
+    
+.footer ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục menu */
+}
+  
+ul.list-unstyled {
+    padding-right: 20px; /* Đệm bên phải cho danh sách mục menu */
+}
+
+.menu-footer li {
+    position: relative;
+    width: 165px;
+}
+
+.menu-footer li a {
+    text-decoration: none; /* Loại bỏ gạch chân trên liên kết */
+    font-family: "Quicksand", sans-serif; 
+    color: #5c5c5c; 
+    cursor: pointer; /* Biểu tượng con trỏ khi di chuyển chuột qua mục menu */
+}
+
+/*THAY ĐỔI KHI DI CHUYỂN CHUỘT QUA MENU*/
+.menu-footer li a:hover {
+    color: #944076; /* Màu chữ khi di chuột qua mục menu */
+}
+
+/*EMAIL NHẬN THÔNG TIN*/
+.footer form {
+    display: flex; /* Sử dụng mô hình flexbox cho phần đăng ký email */
+    flex-direction: column; /* Canh chỉnh các phần tử theo chiều dọc */
+}
+
+#email {
+    padding: 10px; /* Khoảng cách bên trong ô nhập email */
+    margin-bottom: 10px; 
+    border: 1px solid #fff; 
+    border-radius: 4px; /* Bo góc cho ô nhập email */
+}
+
+.footer button {
+    background-color: #A877B2; 
+    color: #fff; 
+    padding: 10px; 
+    border: none; /* Loại bỏ đường viền nút */
+    border-radius: 4px; /* Bo góc cho nút đăng ký */
+    cursor: pointer; 
+    transition: background-color 0.3s; /* Hiệu ứng màu nền khi di chuột qua nút */
+}
+
+.footer button:hover {
+    background-color: #944076; /* Màu nền khi di chuột qua nút */
+}
+
+/*CÁC BIỂU TƯỢNG MẠNG XÃ HỘI*/
+.social-icons a {
+    display: inline-block; /* Hiển thị các biểu tượng mạng xã hội cạnh nhau */
+    margin-right: 10px; 
+    color: #000000; 
+    transition: color 0.3s ease; /* Hiệu ứng màu chữ khi di chuột qua biểu tượng */
+    font-size: 20px; 
+    cursor: pointer; 
+    margin-top: 5px; 
+}
+  
+.social-icons a:hover {
+    color: #A877B2; /* Màu chữ khi di chuột qua biểu tượng */
+}
+
+/*CHỈNH SỬA PHẦN FOLLOW US VÀ BẢN QUYỀN*/
+.followus {
+    text-align: center; 
+    margin-top: 50px; 
+}
+  
+p.copy-right {
+    margin-top: 40px; 
+    text-align: center; 
+    font-size: 15px; 
+}

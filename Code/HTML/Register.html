@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER - LUX PERFUME</title>
+    <!-- Liên kết với thư viện Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/Code/CSS/Product.css">
+    <link rel="stylesheet" href="/Code/CSS/Header.css">
+    <link rel="stylesheet" href="/Code/CSS/Footer.css">
+    <link rel="stylesheet" href="/Code/CSS/Login_Register.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="search-bar">
+                    <input class="search-input" type="text" placeholder="Tìm kiếm...">
+                    <button class="search-button"><i class="fas fa-search"></i>Tìm Kiếm</button>
+                    <a href="Login.html" class="icons"><i class="far fa-user"></i></a>
+                    <a href="Cart.html" class="icons"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+            <div class="header-brand">
+                <p class="brand">Lux Perfume</p>
+            </div>
+            <div class="header-bottom">
+                <ul class="menu">
+                    <li><a href="HomePage.html">Trang Chủ</a></li>
+                    <li><a href="Project_ListProduct_Dior.html">Dior</a></li>
+                    <li><a href="Project_ListProduct_Valentino.html">Valentino</a></li>
+                    <li><a href="Project_ListProduct_VictoriaS.html">Victoria's Secrect</a></li>
+                    <li><a href="Project_ListProduct_Versace.html">Versace</a></li>
+                    <li><a href="AboutUs.html">Về Chúng Tôi</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="custom-hr">
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Đăng Ký</h2>
+            <form name="register" action="register.php" method="post" onsubmit="return registerSuccess();">
+                <label for="new-username">Tên đăng nhập</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <label for="new-password">Mật khẩu</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <label for="re-password">Xác nhận mật khẩu</label>
+                <input type="password" id="re-password" name="re-password" required>
+                <small><i><a href="Login.html">Đăng Nhập</a></i></small>
+                <button class="btn" type="submit" >Đăng Ký</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+              <h3>LIÊN HỆ</h3>
+              <ul class="list-unstyled">
+                  <li><i class="fas fa-map-marker-alt"></i>140 Lê Trọng Tấn, Tân Phú, Thành phố Hồ Chí Minh, Việt Nam</li>
+                  <li><i class="fas fa-phone"></i> 0123456789</li>
+                  <li><i class="fas fa-envelope"></i> luxperfume@gmail.com</li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>MENU</h3>
+              <ul class="list-unstyled menu-footer">
+                <li><a href="HomePage.html">TRANG CHỦ</a></li>
+                <li><a href="Project_ListProduct_Dior.html">DIOR</a></li>
+                <li><a href="Project_ListProduct_Valentino.html">VALENTINO</a></li>
+                <li><a href="Project_ListProduct_VictoriaS.html">VICTORIA'S SECRECT</a></li>
+                <li><a href="Project_ListProduct_Versace.html">VERSACE</a></li>
+                <li><a href="AboutUs.html">VỀ CHÚNG TÔI</a></li>
+              </ul>
+              </div>
+            <div class="footer-section">
+              <h3>ĐĂNG KÝ NHẬN THÔNG BÁO</h3>
+                  <small><i>&quot;Nhận thông tin sản phẩm và khuyến mãi mới qua email&quot;</i></small> </br><br>
+                  <form action="#" method="post">
+                      <input id="email" type="email" name="email" placeholder="Email của bạn">
+                      <button type="submit"><i class="far fa-envelope"></i> Đăng ký</button>
+                  </form>
+              <div class="followus">
+                <h4>THEO DÕI CHÚNG TÔI</h4>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-tiktok"></i></a>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <p class="copy-right">Copy-right <i class="far fa-copyright"></i> 2023 - 12DHQTMK01 - NHOM 6</p>
+        </div>
+      </footer>
+    <script src="/Code/JAVASCRIPT/Project.js"></script>
+</body>
+</html>

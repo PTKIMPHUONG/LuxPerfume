@@ -1,0 +1,36 @@
+main {
+    background-image: url("/Code/image/artAboutUs.png"); /*Đặt hình nền (background) của main thành
+     hình ảnh tùy chỉnh thay vì màu sắc thông thường*/
+    width: 1287px;
+    height: 650px; 
+}
+.introduce-us {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px; 
+    padding: 20px;
+
+}
+.AboutUs {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 500px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+}
+
+th, td {
+    border: 1px solid #C3C8FF;
+    height: 30px;
+}
+
+th {
+    background-color: #C3C8FF;
+    color: #fff;
+}

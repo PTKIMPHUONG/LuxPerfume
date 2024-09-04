@@ -1,0 +1,59 @@
+main {
+    display: flex; /* Sử dụng mô hình flexbox */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/*Phần mô tả của Home Page*/
+.homePage-description {
+    float: left; /* Đặt nội dung của phần này sang bên trái của main*/
+    text-align: center;
+    flex: 1; /* Tự động phân chia không gian theo tỷ lệ trong flexbox */
+    width: 100%;
+    flex-direction: column; /* Canh chỉnh phần tử theo chiều dọc */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#slogan {
+    padding: 5px;
+    letter-spacing: 0px;
+    font-size: medium;
+}
+
+/*Điều chỉnh các nút(button)*/
+.homePage-description button {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none; /* Loại bỏ đường viền nút */
+}
+
+.homePage-description a {
+    text-decoration-line: none;
+    color: white;
+}
+
+/*Phần hình ảnh quảng cáo của Home Page*/
+.slider {
+    flex: 1;
+    width: 80%;
+    text-align: center;
+    overflow: hidden; /* Ẩn phần nội dung vượt khỏi khung */
+    float: right; /* Đặt nội dung của phần này sang bên phải của main*/
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Ẩn hình ảnh mặc định */
+}
+
+/*Dùng để Hiển thị phần tử hình ảnh đầu tiên bên trong slider dưới dạng một khối (block) 
+thay vì một dòng ngang*/
+.slider img:first-child {
+    display: block;
+}
+

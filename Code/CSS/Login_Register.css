@@ -1,0 +1,44 @@
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 350px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.container input, .btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: block;
+    background-color: #A877B2;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #944076;
+}

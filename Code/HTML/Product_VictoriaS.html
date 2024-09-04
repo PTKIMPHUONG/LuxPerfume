@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUX PERFUME</title>
+    <!-- Liên kết với thư viện Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Liên kết đến CSS-->
+    <link rel="stylesheet" href="/Code/CSS/Product.css">
+    <link rel="stylesheet" href="/Code/CSS/Header.css">
+    <link rel="stylesheet" href="/Code/CSS/Footer.css">
+    <link rel="stylesheet" href="/Code/CSS/Cart.css">
+</head>
+<body>
+    <!--HEADER CỦA WEBSITE-->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="search-bar">
+                    <input class="search-input" type="text" placeholder="Tìm kiếm...">
+                    <button class="search-button"><i class="fas fa-search"></i>Tìm Kiếm</button>
+                    <a href="Login.html" class="icons"><i class="far fa-user"></i></a>
+                    <a class="icons js-buy-item"><i class="fas fa-shopping-bag"></i><span id="countCart"></span></a>
+                </div>
+            </div>
+            <div class="header-brand">
+                <p class="brand">Lux Perfume</p>
+            </div>
+            <div class="header-bottom">
+                <ul class="menu">
+                    <li><a href="HomePage.html">Trang Chủ</a></li>
+                    <li><a href="Project_ListProduct_Dior.html">Dior</a></li>
+                    <li><a href="Project_ListProduct_Valentino.html">Valentino</a></li>
+                    <li><a href="Project_ListProduct_VictoriaS.html">Victoria's Secrect</a></li>
+                    <li><a href="Project_ListProduct_Versace.html">Versace</a></li>
+                    <li><a href="AboutUs.html">Về Chúng Tôi</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="custom-hr">
+    </header>
+
+    <!--MAIN CỦA WEBSITE-->
+    <main>
+        <div class="product-container">
+            <!--Phần hình ảnh sản phẩm-->
+            <div class="product-image">
+                <img src="/Code/image/Victoria's_Secret/BOMBSHELL LONDON EAU DE PARFUM.png" alt="BOMBSHELL LONDON EAU DE PARFUM">
+            </div>
+            <!--Phần thông tin sản phẩm-->
+            <div class="product-details">
+                <div> <!--Các thông tin cơ bản về sản phẩm-->
+                    <h1 class="product-title">BOMBSHELL LONDON EAU DE PARFUM</h1>
+                    <p class="product-description">Eau de parfum</p>
+                    <p class="product-price">$156.99</p>
+                    <div class="quantity-input">
+                        <button class="quantity-button decrease-button" onclick="decreaseQuantity()">-</button>
+                        <input type="text" class="quantity" value="1">
+                        <button class="quantity-button increase-button" onclick="increaseQuantity()">+</button>
+                    </div>
+                    <button class="product-addToCart" onclick="Buy(this)">Thêm vào giỏ hàng</button>
+                </div>
+                <!--Thông tin chi tiết về sản phẩm-->
+                <div>
+                    <div class="Info" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                        <h2 style="font-weight: bold">MÔ TẢ SẢN PHẨM</h2>
+                        <div>
+                        <p>Tươi sáng và đầy màu sắc, Miss Dior Complete Blooming là một loại nước hoa có mùi hương hoa xa hoa mà bạn sẽ quay lại nhiều lần. 
+                            Những nốt hương Red Berry thơm ngon được thêu trên nền hoa mẫu đơn tươi mới. 
+                            Được tôn vinh bởi bộ đôi tuyệt vời của Hoa hồng Grasse và Hoa hồng Damascus, 
+                            loài hoa tươi nở rộ vô tận này được an ủi trong lớp hương cuối của xạ hương trắng. 
+                            Một sự hài hòa khứu giác tích cực, sảng khoái dành cho một Miss Dior tinh nghịch và khó cưỡng.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="Info" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                        <h2 style="font-weight: bold;">CHI TIẾT CÁC TẦNG HƯƠNG</h2>
+                        <div>
+                            <p><strong>Hương đầu:</strong> Quả lý chua đen, Quả lựu, Quả mâm xôi, Hồng tiêu.</p>
+                            <p><strong>Hương giữa:</strong> Hoa mẫu đơn, Hoa hồng tháng năm.</p>
+                            <p><strong>Hương cuối:</strong> Xạ hương trắng.</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Phần thông tin chi tiết giỏ hàng bị ẩn đi-->
+    <div class="modal-cart js-modal">
+        <div class="modal-container js-modal-containter">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <!--Phần header của giỏ hàng-->
+            <header class="modal-header">
+                <i class="fas fa-shopping-bag"></i>
+                <span style="margin-left: 5px;">GIỎ HÀNG</span>
+            </header>
+            <!--Phần thân của giỏ hàng-->
+            <main class="modal-body">
+                <div id="cart1">
+                    <table >
+                        <thead>
+                            <tr >   
+                                <th>STT</th>         
+                                <th>Hình ảnh</th>
+                                <th>Sản phẩm</th>
+                                <th>Số Lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                    <tbody id="mycart"></tbody>
+                    </table>
+                </div>
+            </main>
+            <!--Phần footer của giỏ hàng-->
+            <footer class="js-modal">
+                    <div class="js-modal-containter">
+                        <button class="close-cart">ĐÓNG</button>
+                    </div>
+            </footer>
+        </div>
+    </div>
+
+    <!--FOOTER CỦA WEBSITE-->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+              <h3>LIÊN HỆ</h3>
+              <ul class="list-unstyled">
+                  <li><i class="fas fa-map-marker-alt"></i>140 Lê Trọng Tấn, Tân Phú, Thành phố Hồ Chí Minh, Việt Nam</li>
+                  <li><i class="fas fa-phone"></i> 0123456789</li>
+                  <li><i class="fas fa-envelope"></i> luxperfume@gmail.com</li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>MENU</h3>
+              <ul class="list-unstyled menu-footer">
+                <li><a href="HomePage.html">TRANG CHỦ</a></li>
+                <li><a href="Project_ListProduct_Dior.html">DIOR</a></li>
+                <li><a href="Project_ListProduct_Valentino.html">VALENTINO</a></li>
+                <li><a href="Project_ListProduct_VictoriaS.html">VICTORIA'S SECRECT</a></li>
+                <li><a href="Project_ListProduct_Versace.html">VERSACE</a></li>
+                <li><a href="AboutUs.html">VỀ CHÚNG TÔI</a></li>
+              </ul>
+              </div>
+            <div class="footer-section">
+              <h3>ĐĂNG KÝ NHẬN THÔNG BÁO</h3>
+                  <small><i>&quot;Nhận thông tin sản phẩm và khuyến mãi mới qua email&quot;</i></small> </br><br>
+                  <form action="#" method="post">
+                      <input id="email" type="email" name="email" placeholder="Email của bạn">
+                      <button type="submit"><i class="far fa-envelope"></i> Đăng ký</button>
+                  </form>
+              <div class="followus">
+                <h4>THEO DÕI CHÚNG TÔI</h4>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-tiktok"></i></a>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="copy-right">Copy-right <i class="far fa-copyright"></i> 2023 - 12DHQTMK01 - NHOM 6</p>
+        </div>
+    </footer>
+    <!--Liên kết đến các thư viện Jquery và Bootstrap của Javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!--Liên kết đến Javascript-->
+    <script src="/Code/JAVASCRIPT/Cart.js"></script>
+</body>
+</html>

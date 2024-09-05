@@ -1,1 +1,1 @@
-Design Lux Perfume website
+Design Lux Perfume website (HTML/CSS/JS)
